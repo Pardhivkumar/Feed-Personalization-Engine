@@ -26,7 +26,7 @@ def generate_random_profile():
     }
 
 def calculate_time_match(post_time, active_hours):
-    post_hour = int(post_time[11:13])  # extract hour from ISO timestamp
+    post_hour = int(post_time[11:13])  
     for slot in active_hours:
         start_str, end_str = slot.split('-')
         start = int(start_str.split(':')[0])
